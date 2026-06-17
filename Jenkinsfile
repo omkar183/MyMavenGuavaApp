@@ -22,11 +22,6 @@ pipeline {
                 sh 'mvn test'  
             }
         }
-        stage('Run Application') {
-            steps {
-                sh 'java -jar target/MyMavenGuavaApp-1.0-SNAPSHOT.jar'
-            }
-        }     
     }
 
     post {
